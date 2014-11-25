@@ -15,7 +15,7 @@ DEFINES += {{ cookiecutter.repo_name.lower() }}_LIBRARY
 SOURCES +=
 
 HEADERS += {{ cookiecutter.repo_name.lower() }}_global.h \
-    qcli.h
+    {{ cookiecutter.repo_name.lower() }}.h
 
 unix {
     target.path = /usr/lib
