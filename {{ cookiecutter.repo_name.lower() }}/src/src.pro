@@ -9,13 +9,9 @@ TARGET   = {{ cookiecutter.repo_name.lower() }}
 TEMPLATE = lib
 
 include(../{{ cookiecutter.repo_name.lower() }}.pri)
+include(src.pri)
 
 DEFINES += {{ cookiecutter.repo_name.upper() }}_LIBRARY
-
-SOURCES +=
-
-HEADERS += {{ cookiecutter.repo_name.lower() }}_global.h \
-    {{ cookiecutter.repo_name.lower() }}.h
 
 unix {
     target.path = /usr/lib
