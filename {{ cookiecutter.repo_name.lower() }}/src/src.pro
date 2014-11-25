@@ -8,7 +8,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 TARGET   = {{ cookiecutter.repo_name.lower() }}
 TEMPLATE = lib
 
-include(../{{ cookiecutter.repo_name }}.pri)
+include(../{{ cookiecutter.repo_name.lower() }}.pri)
 
 DEFINES += {{ cookiecutter.repo_name.lower() }}_LIBRARY
 

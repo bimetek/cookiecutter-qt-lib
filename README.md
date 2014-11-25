@@ -7,7 +7,7 @@
 You need to get [Cookiecutter] installed. The easiest way to do this is to install it with pip, provided you have Python (ideally Python 3.4 or newer) installed in your system:
 
     pip install cookiecutter
-    
+
 With Cookiecutter, you can now create a project against this repository:
 
     cookiecutter https://github.com/bimetek/cookiecutter-qt-lib.git
@@ -18,7 +18,7 @@ You will be prompted some questions:
 
 ## Structure
 
-The generated template contains two subprojects: *src* for your main code, and *test* for unit tests. By default all building occurs in *build* subdirectory (no created; will be generated automatically during building), and the targets (both lib and test binary) will be in *bin*. A `.gitignore` file should be already created at the top level of the repository, allowing you to initialise a Git repo directly without any fuss.
+The generated template contains two subprojects: *src* for your main code, and *tests* for unit tests. By default all building occurs in *build* subdirectory (no created; will be generated automatically during building), and the targets (both lib and test binary) will be in *bin*. A `.gitignore` file should be already created at the top level of the repository, allowing you to initialise a Git repo directly without any fuss.
 
 ## License
 

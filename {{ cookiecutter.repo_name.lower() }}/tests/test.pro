@@ -8,7 +8,7 @@ CONFIG   -= app_bundle
 
 TEMPLATE  = app
 
-include(../{{ cookiecutter.repo_name }}.pri)
+include(../{{ cookiecutter.repo_name.lower() }}.pri)
 
 DEFINES += SRCDIR=\\\"$$PWD/\\\"
 
