@@ -10,7 +10,7 @@ TEMPLATE = lib
 
 include(../{{ cookiecutter.repo_name.lower() }}.pri)
 
-DEFINES += {{ cookiecutter.repo_name.lower() }}_LIBRARY
+DEFINES += {{ cookiecutter.repo_name.upper() }}_LIBRARY
 
 SOURCES +=
 
