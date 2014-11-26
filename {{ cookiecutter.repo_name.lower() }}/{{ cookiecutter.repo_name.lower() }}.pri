@@ -11,3 +11,11 @@ OBJECTS_DIR = $$BUILD_DIR
 MOC_DIR = $$BUILD_DIR
 RCC_DIR = $$BUILD_DIR
 UI_DIR = $$BUILD_DIR
+
+
+# Add your files here
+
+HEADERS += {{ cookiecutter.repo_name.lower() }}_global.h \
+    {{ cookiecutter.repo_name.lower() }}.h
+
+SOURCES +=

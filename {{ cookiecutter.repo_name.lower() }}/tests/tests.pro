@@ -9,9 +9,10 @@ CONFIG   -= app_bundle
 TEMPLATE  = app
 
 include(../{{ cookiecutter.repo_name.lower() }}.pri)
-include(../src/src.pri)
 
-DEFINES += SRCDIR=\\\"$$PWD/\\\"
+DEFINES += SRCDIR=\\\"$$PWD/../src\\\"
+
+INCLUDEPATH += $$PWD/../src
 
 SOURCES += \
     {{ cookiecutter.repo_name.lower() }}test.cpp \

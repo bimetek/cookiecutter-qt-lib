@@ -20,7 +20,7 @@ You will be prompted some questions:
 
 The generated template contains two subprojects: *src* for your main code, and *tests* for unit tests. By default all building occurs in *build* subdirectory (no created; will be generated automatically during building), and the targets (both lib and test binary) will be in *bin*. A `.gitignore` file should be already created at the top level of the repository, allowing you to initialise a Git repo directly without any fuss.
 
-To add files to the *src* subproject, you should add them to `src.pri` instead of `src.pro`. This ensures they can be found by the unit test project (via `include` in `tests.pro`). Unit test files can be added directly into `test.pro`.
+To add files to the *src* subproject, you should add them to the top-level `pri` file instead of `src.pro`. This ensures they can be found by the unit test project (via `include` in both `src.pro` and `tests.pro`). Unit test files can be added directly into `test.pro`.
 
 ## License
 
