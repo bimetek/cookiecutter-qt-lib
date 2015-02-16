@@ -3,12 +3,12 @@
 
 #include <QtTest>
 
-class {{ cookiecutter.repo_name }}Test : public QObject
+class {{ cookiecutter.repo_name.title() }}Test : public QObject
 {
     Q_OBJECT
 
 public:
-    {{ cookiecutter.repo_name }}Test();
+    {{ cookiecutter.repo_name.title() }}Test();
 
 private slots:
     void testDemo();
