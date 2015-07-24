@@ -3,10 +3,14 @@
 
 #include <QtCore/QtGlobal>
 
-#if defined({{ cookiecutter.repo_name.upper() }}_LIBRARY)
-#  define {{ cookiecutter.repo_name.upper() }}SHARED_EXPORT Q_DECL_EXPORT
+#ifdef {{ cookiecutter.repo_name.upper() }}_STATIC
+#   define {{ cookiecutter.repo_name.upper() }}_EXPORT
 #else
-#  define {{ cookiecutter.repo_name.upper() }}SHARED_EXPORT Q_DECL_IMPORT
+#   ifdef {{ cookiecutter.repo_name.upper() }}_LIBRARY
+#       define {{ cookiecutter.repo_name.upper() }}_SHARED_EXPORT Q_DECL_EXPORT
+#   else
+#       define {{ cookiecutter.repo_name.upper() }}_SHARED_EXPORT Q_DECL_IMPORT
+#   endif
 #endif
 
 #endif // {{ cookiecutter.repo_name.upper() }}_GLOBAL_H
