@@ -15,7 +15,8 @@ UI_DIR = $$BUILD_DIR
 
 # Add your files here
 
-HEADERS += {{ cookiecutter.repo_name.lower() }}_global.h \
-    {{ cookiecutter.repo_name.lower() }}.h
+HEADERS += \
+    $$PWD/src/{{ cookiecutter.repo_name.lower() }}_global.h \
+    $$PWD/src/{{ cookiecutter.repo_name.lower() }}.h
 
 SOURCES +=
